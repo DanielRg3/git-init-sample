@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Rectangular extends Model {}
+class Products extends Model {}
 
-Rectangular.init(
+Products.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -14,18 +14,6 @@ Rectangular.init(
         name: {
             type: DataTypes.STRING,
             allowNull: false,
-        },
-        shape: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
-        chairs: {
-            type: DataTypes.INTEGER,
-            allowNull: true,
-        },
-        dimensions: {
-            type: DataTypes.STRING,
-            allowNull: true,
         },
         Price: {
             type: DataTypes.DECIMAL,
@@ -40,8 +28,8 @@ Rectangular.init(
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'rectangular',
+        modelName: 'products',
     }
 );
 
-module.exports = Rectangular;
+module.exports = Products;
