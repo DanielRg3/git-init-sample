@@ -1,0 +1,33 @@
+{
+  "name": "second-project",
+  "version": "1.0.0",
+  "description": "For this project, we need to create an interactiv webpage with a clean User-Interface for an specific client.\r In this occation our client is **Parota del Carmen**. This client sells wooden tables and chairs, alongside with wooden accessories.\r The intention is to create a webpage in which the user can review all the client inventory {Tables, Chairs, Accessories}, and the product characteristics, such as:\r - Product Dimensions\r - Available Colors\r - Available Pater Designs\r - Pricing",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seeds/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielRg3/Second-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielRg3/Second-Project/issues"
+  },
+  "homepage": "https://github.com/DanielRg3/Second-Project#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-session-sequelize": "^7.1.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.0",
+    "nodemon": "^2.0.13",
+    "sequelize": "^6.6.5"
+  }
+}
